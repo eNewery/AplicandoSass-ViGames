@@ -1,0 +1,12 @@
+{
+  "name": "desafio-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "compile:sass": "sass --watch styles/styles.scss styles/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
