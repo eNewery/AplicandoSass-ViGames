@@ -27,29 +27,69 @@
   flex-direction: column;
   height: 90vh;
 }
+.index__container main .main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.index__container main .main__content h2 {
+  font-size: 32px;
+  color: rgb(61, 33, 33);
+  margin-top: 50px;
+  width: 800px;
+  transition: 1s;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  justify-content: center;
+}
+.index__container main .main__content h2:hover {
+  background-color: rgba(255, 190, 190, 0.5);
+  transition: 1s;
+  cursor: pointer;
+}
 .index__container main .main__content button {
   height: 50px;
   width: 700px;
-  margin-top: 200px;
+  margin-top: 30px;
   border-radius: 15px;
   background: rgb(255, 92, 92);
   border: 1px solid red;
   cursor: pointer;
 }
-.index__container main .main__content h3, .index__container main .main__content h4 {
+.index__container main .main__content h3,
+.index__container main .main__content h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40%;
-  border: 1px solid red;
-  margin-top: 30px;
+  height: 100px;
+  text-align: center;
+  width: 800px;
+  margin-top: 10px;
   border-radius: 300px;
-  color: rgb(148, 0, 0);
   transition: 1s;
-  font-weight: 100;
+  color: rgb(61, 33, 33);
+  font-weight: 400;
 }
-.index__container main .main__content h3:hover, .index__container main .main__content h4:hover {
+.index__container main .main__content h3 a,
+.index__container main .main__content h4 a {
+  text-decoration: none;
+  color: rgb(134, 42, 42);
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 4px;
+  transition: 1s;
+}
+.index__container main .main__content h3 a:hover,
+.index__container main .main__content h4 a:hover {
+  background-color: rgba(255, 190, 190, 0.5);
+  transition: 1s;
+}
+.index__container main .main__content h3:hover,
+.index__container main .main__content h4:hover {
   background-color: rgba(255, 190, 190, 0.5);
   transition: 1s;
 }
@@ -75,7 +115,7 @@
 }
 .index__container header .second__logo {
   position: relative;
-  left: 283px;
+  left: 276px;
   transform: rotate(-90deg);
 }
 .index__container .header__logo {

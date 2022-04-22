@@ -1,112 +1,149 @@
 @import "variables.scss";
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    text-align: center;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
 }
-.index__container{
-    height: 100%;
-    width: 100%;
+.index__container {
+  height: 100%;
+  width: 100%;
 
-footer{
+  footer {
     background-color: $principal-color;
     height: 4vh;
-    box-shadow: 0px 10px 13px 10px #ff7878, 5px 5px 15px 5px rgba(255, 131, 131, 0);
-    border-top:1px solid red;
-    display:flex;
+    box-shadow: 0px 10px 13px 10px #ff7878,
+      5px 5px 15px 5px rgba(255, 131, 131, 0);
+    border-top: 1px solid red;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-    main{
-        background-image: url(../img/logomain.jpg);
-        display: flex;
-        flex-direction: column;
-        height:90vh;
-.main__content{
-    button{
-        height: 50px;
-        width: 700px;
-        margin-top:200px;
-        border-radius: 15px;
-        background:$principal-color;
-        border:1px solid red;
-        cursor:pointer;
-        }
-    h3, h4{
-    display:flex;
+  }
+  main {
+    background-image: url(../img/logomain.jpg);
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-        border:1px solid red;
-        margin-top:30px;
-        border-radius: 300px;
-        color:rgb(148, 0, 0);
-        transition:1s;
-        font-weight: 100;
-        &:hover{
-            background-color: rgba(255, 190, 190, 0.5);
-            transition: 1s;
-        }
-
-    }
-}
-        .main__logo{
-            margin-top:25px;
-
-            h1{
-                font-weight: 500;
-                color:$principal-color;
-            }
-        }
-    }
-    header{
-        background-color: $principal-color;
-        height:50px;
+    height: 90vh;
+    .main__content {
         display:flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        border-bottom:1px solid red;
-        box-shadow: 0px 10px 13px -7px #ff7878, 5px 5px 15px 5px rgba(255, 131, 131, 0);
-        .first__logo{
-            position:relative;
-            left:325px;
+        h2{
+font-size:32px;
+color:rgb(61, 33, 33);
+margin-top:50px;
+width: 800px;
+transition: 1s;
+height: 50px;
+display:flex;
+align-items: center;
+border-radius: 100px;
+justify-content: center;
+&:hover{
+    background-color: rgba(255, 190, 190, 0.5);
+    transition: 1s;
+cursor:pointer;
+}
         }
-        .second__logo{
-            position:relative;
-            left:283px;
-            transform: rotate(-90deg);
-        }
-        }
-    .header__logo{
-        width: 15%;
+      button {
+        height: 50px;
+        width: 700px;
+        margin-top:30px;
+        border-radius: 15px;
+        background: $principal-color;
+        border: 1px solid red;
+        cursor: pointer;
+      }
+      h3,
+      h4 {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 100px;
+        text-align: center;
+        width: 800px;
+        margin-top: 10px;
+        border-radius: 300px;
+        transition: 1s;
+        color:rgb(61, 33, 33);
+        font-weight: 400;
         a{
             text-decoration: none;
-            color:black;
-            @include boton;
-        }
-    }
-    .header__nav{
-        width: 50%;
-        height: 40%;
-        nav{
-            ul{
-                align-items: center;
-                list-style: none;
-                display:flex;
-                justify-content: space-around;
-                li{
-                    a{
-                        text-decoration: none;
-                        color:black;
-                        @include boton;
-                    }
-                }
+            color:rgb(134, 42, 42);
+            border:1px solid red;
+            border-radius: 10px;
+            padding:4px;
+            transition: 1s;
+            &:hover{
+                background-color: rgba(255, 190, 190, 0.5);
+                transition: 1s;
             }
         }
+        &:hover {
+          background-color: rgba(255, 190, 190, 0.5);
+          transition: 1s;
+
+        }
+      }
     }
+    .main__logo {
+      margin-top: 25px;
+
+      h1 {
+        font-weight: 500;
+        color: $principal-color;
+      }
+    }
+  }
+  header {
+    background-color: $principal-color;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid red;
+    box-shadow: 0px 10px 13px -7px #ff7878,
+      5px 5px 15px 5px rgba(255, 131, 131, 0);
+    .first__logo {
+      position: relative;
+      left: 325px;
+    }
+    .second__logo {
+      position: relative;
+      left: 276px;
+      transform: rotate(-90deg);
+    }
+  }
+  .header__logo {
+    width: 15%;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
+      @include boton;
+    }
+  }
+  .header__nav {
+    width: 50%;
+    height: 40%;
+    nav {
+      ul {
+        align-items: center;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            @include boton;
+          }
+        }
+      }
+    }
+  }
 }
